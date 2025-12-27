@@ -1,0 +1,73 @@
+{
+    "test_accuracy": 1.0,
+    "test_f1": 1.0,
+    "test_auc": 1.0,
+    "test_loss": 0.7210135012865067,
+    "confusion_matrix": [
+        [
+            3,
+            0
+        ],
+        [
+            0,
+            3
+        ]
+    ],
+    "specificity": 1.0,
+    "sensitivity": 1.0,
+    "best_val_accuracy": 1.0,
+    "best_val_f1": 1.0,
+    "config": {
+        "real_videos_dir": "/content/drive/MyDrive/VideosNettoyeesPart2/real",
+        "fake_videos_dir": "/content/drive/MyDrive/VideosNettoyeesPart2/fake",
+        "num_frames": 45,
+        "frame_size": 224,
+        "use_face_crop": true,
+        "backbone": "efficientnet_b0",
+        "use_pretrained": true,
+        "lstm_hidden_size": 192,
+        "lstm_layers": 2,
+        "bidirectional": true,
+        "dropout_rate": 0.4,
+        "use_attention": true,
+        "use_augmentation": true,
+        "augment_prob": 0.5,
+        "batch_size": 4,
+        "learning_rate": 0.0003,
+        "weight_decay": 0.0001,
+        "num_epochs": 30,
+        "min_epochs": 10,
+        "patience": 12,
+        "use_cross_validation": false,
+        "num_folds": 5,
+        "gradient_clip": 1.0,
+        "use_scheduler": true,
+        "save_dir": "models_max_accuracy_Aymeni2"
+    },
+    "test_predictions": {
+        "probabilities": [
+            0.486016184091568,
+            0.5027905106544495,
+            0.5070282220840454,
+            0.49827221035957336,
+            0.5042643547058105,
+            0.49466684460639954
+        ],
+        "labels": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0
+        ],
+        "predictions": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0
+        ]
+    }
+}
