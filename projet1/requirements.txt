@@ -1,0 +1,8 @@
+torch
+torchvision
+torchaudio
+flask
+opencv-python
+numpy
+librosa
+moviepy
